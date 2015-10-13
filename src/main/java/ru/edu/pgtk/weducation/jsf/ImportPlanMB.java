@@ -74,7 +74,7 @@ public class ImportPlanMB implements Serializable {
       return false;
     }
     // TODO добавить еще поля для сравнения
-    return (a.getBeginYear() == b.getBeginYear());
+    return a.getBeginYear() == b.getBeginYear();
   }
 
   /**
@@ -127,7 +127,7 @@ public class ImportPlanMB implements Serializable {
               exist = true;
               for (StudyPlan p: samePlans) {
                 addMessage("Уже имеется учебный план \"" + p.getNameForList() + "\" с наименованием специальности \"" +
-                  p.getSpecialityName()+"\" и аналогичными другими параметрами в специальности " + 
+                  p.getSpecialityName() + "\" и аналогичными другими параметрами в специальности " + 
                   p.getSpeciality().getName() + ". Импорт невозможен!");
               }
             }

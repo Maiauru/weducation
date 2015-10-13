@@ -71,7 +71,7 @@ public class DepartmentRootMB implements Serializable {
 
   public void toggleEdit() {
     try {
-      if ((edit) && (null != department)) {
+      if (edit && (null != department)) {
         departments.save(department);
       }
       edit = !edit;

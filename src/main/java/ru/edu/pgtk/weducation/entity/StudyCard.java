@@ -181,7 +181,7 @@ public class StudyCard implements Serializable {
   }
 
   public String getExtramuralString() {
-    return (extramural) ? "заочная" : "очная";
+    return extramural ? "заочная" : "очная";
   }
   
   public String getActiveString() {
@@ -193,7 +193,7 @@ public class StudyCard implements Serializable {
   }
   
   public String getGosExamString() {
-    return gosExam? "государственный экзамен" : "дипломирование";
+    return gosExam ? "государственный экзамен" : "дипломирование";
   }
   
   public String getRemandedString() {

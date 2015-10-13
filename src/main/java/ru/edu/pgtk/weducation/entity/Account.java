@@ -58,11 +58,11 @@ public class Account implements Serializable {
   }
   
   public boolean isAdmin() {
-    return (role == AccountRole.ADMIN);
+    return role == AccountRole.ADMIN;
   }
   
   public boolean isDepartment() {
-    return (role == AccountRole.DEPARTMENT);
+    return role == AccountRole.DEPARTMENT;
   }
   
   public String getRoleString() {

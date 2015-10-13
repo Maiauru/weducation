@@ -14,7 +14,7 @@ import javax.inject.Named;
 @Named("utilsEJB")
 public class UtilsEJB {
   
-  private final static List<SelectItem> items;
+  private static final List<SelectItem> items;
   
   static {
     items = new LinkedList<>();
@@ -31,7 +31,7 @@ public class UtilsEJB {
   }
   
   public String getEnabledClass(final boolean enabled) {
-    return (enabled)? "enabled" : "disabled";
+    return enabled ? "enabled" : "disabled";
   }
   
   @Deprecated

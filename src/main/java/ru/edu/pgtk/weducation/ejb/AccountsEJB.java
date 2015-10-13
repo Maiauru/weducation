@@ -54,7 +54,7 @@ public class AccountsEJB {
     TypedQuery<Long> q = em.createQuery(
       "SELECT COUNT(a) FROM Account a WHERE (a.role = :r)", Long.class);
     q.setParameter("r", AccountRole.ADMIN);
-    return (q.getSingleResult() > 0);
+    return q.getSingleResult() > 0;
   }
 
   @WithLog

@@ -25,7 +25,7 @@ import static ru.edu.pgtk.weducation.jsf.Utils.getExternalContext;
  */
 @Named("sessionMB")
 @SessionScoped
-@StatefulTimeout(unit=TimeUnit.MINUTES, value=5)
+@StatefulTimeout(unit = TimeUnit.MINUTES, value = 5)
 public class SessionMB implements Serializable {
 
   long serialVersionUID = 0L;
@@ -55,7 +55,7 @@ public class SessionMB implements Serializable {
     sessions.save(session);
     // Добавить логирование!
     System.out.println("Session for " + 
-      ((null != user)? user.getFullName() : "unlogged user") + " started.");
+      ((null != user) ? user.getFullName() : "unlogged user") + " started.");
   }
 
   /**
@@ -66,7 +66,7 @@ public class SessionMB implements Serializable {
   private void stopSession() {
     // TODO написать в лог, что сессия завершилась
     System.out.println("Session for " + 
-      ((null != user)? user.getFullName() : "unlogged user") + " passivated.");
+      ((null != user) ? user.getFullName() : "unlogged user") + " passivated.");
     // Удаляем из базы данных сессию.
     if (session != null) {
       sessions.delete(session);
@@ -85,7 +85,7 @@ public class SessionMB implements Serializable {
   @PrePassivate
   private void passivateSession() {
     System.out.println("Session for " + 
-      ((null != user)? user.getFullName() : "unlogged user") + " stopped.");
+      ((null != user) ? user.getFullName() : "unlogged user") + " stopped.");
   }
 
   /**

@@ -35,7 +35,7 @@ public class SeatPlansMB implements Serializable {
   }
   
   public String getFormString() {
-    return (extramural? "заочная" : "очная") + " форма обучения";
+    return (extramural ? "заочная" : "очная") + " форма обучения";
   }
 
   public Map<String, Integer> getYears() {

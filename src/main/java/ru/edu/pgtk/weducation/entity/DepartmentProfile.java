@@ -50,7 +50,7 @@ public class DepartmentProfile implements Serializable {
   }
 
   public String getExtramuralString() {
-    return (extramural) ? "заочная" : "очная";
+    return extramural ? "заочная" : "очная";
   }
 
   public String getNameForList() {

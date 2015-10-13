@@ -448,7 +448,7 @@ public class GroupReportsEJB {
    */
   private byte[] monthMarks(final GroupSemester gs, final int year, final int month, final boolean empty) {
     try {
-      String title = "Ведомость " + ((empty) ? "аттестации" : "успеваемости");
+      String title = "Ведомость " + (empty ? "аттестации" : "успеваемости");
       Report document = PDFReport.create(Report.Orientation.PORTRET, title);
       document.add(getParagraph(schoolName, regularFont, Paragraph.ALIGN_CENTER));
       document.add(getParagraph(title, bigFont, Paragraph.ALIGN_CENTER));

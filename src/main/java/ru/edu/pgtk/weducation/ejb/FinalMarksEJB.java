@@ -38,7 +38,7 @@ public class FinalMarksEJB {
     Query q = em.createNativeQuery("SELECT getAverageMark(?)");
     q.setParameter(1, card.getId());
     BigDecimal result = (BigDecimal)q.getSingleResult();
-    return (result != null)? result.floatValue() : 0f;
+    return (result != null) ? result.floatValue() : 0f;
     } catch (Exception e) {
       throw new EJBException("Exception class " + e.getClass().getName() + " with message " + e.getMessage());
     }

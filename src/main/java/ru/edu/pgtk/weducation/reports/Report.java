@@ -11,7 +11,6 @@ import com.itextpdf.text.Element;
 public interface Report {
 
   public enum Orientation {
-
     PORTRET,
     LANDSCAPE;
   }
@@ -24,12 +23,12 @@ public interface Report {
    * @param element элемент отчета
    * @throws DocumentException
    */
-  public void add(Element element) throws DocumentException;
+  void add(Element element) throws DocumentException;
 
   /**
    * Возвращает содержимое PDF документа в виде массива байт.
    *
    * @return массив байт
    */
-  public byte[] getData();
+  byte[] getData();
 }

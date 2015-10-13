@@ -16,10 +16,10 @@ class Utils {
   }
   
   public static String getBooleanString(final boolean val) {
-    return val? "да" : "нет";
+    return val ? "да" : "нет";
   }
   
   public static String getDateString(final Date date) {
-    return (date != null)? sdf.format(date) : null;
+    return (date != null) ? sdf.format(date) : null;
   }
 }

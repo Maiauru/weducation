@@ -8,10 +8,10 @@ import java.util.Date;
  * @author Воронин Леонид.
  */
 class Utils {
-  private final static String[] months = {"январь", "февраль", "март", "апрель", 
+  private static final String[] months = {"январь", "февраль", "март", "апрель", 
     "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"};
   
-  private final static SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+  private static final SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
   
   private Utils() {
     throw new IllegalStateException("This constructor should not be called!");
@@ -31,7 +31,7 @@ class Utils {
   }
   
   public static String getDateString(final Date date) {
-    return (null == date)? "Date is NULL!" : sdf.format(date);
+    return (null == date) ? "Date is NULL!" : sdf.format(date);
   }
   
 }

@@ -63,7 +63,7 @@ public class PersonsMB extends GenericBean<Person> implements Serializable {
   }
 
   public String getFilterButtonLabel() {
-    return (filter) ? "Новый поиск" : "Поиск";
+    return filter ? "Новый поиск" : "Поиск";
   }
 
   public void loadPerson() {

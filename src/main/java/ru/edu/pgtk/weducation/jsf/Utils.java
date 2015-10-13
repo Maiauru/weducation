@@ -37,8 +37,8 @@ class Utils {
    * @return истина, если текст бесполезен (null, пустое значение либо строка "null")
    */
   private static boolean isUseless(String text) {
-    return ((null == text) || (text.isEmpty()) || text.contentEquals("null") || 
-      text.contentEquals("Transaction aborted") || text.contentEquals("Transaction marked for rollback"));
+    return (null == text) || (text.isEmpty()) || text.contentEquals("null") || 
+      text.contentEquals("Transaction aborted") || text.contentEquals("Transaction marked for rollback");
   }
 
   /**

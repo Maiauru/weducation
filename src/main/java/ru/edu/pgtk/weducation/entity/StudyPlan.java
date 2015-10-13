@@ -70,7 +70,7 @@ public class StudyPlan implements Serializable {
   }
 
   public String getExtramural() {
-    return ((extramural) ? "заочная" : "очная") + " форма";
+    return (extramural ? "заочная" : "очная") + " форма";
   }
 
   public String getNameForList() {

@@ -56,7 +56,7 @@ public class SeatsEJB {
   public List<Seat> fetch(final int year, final boolean extramural) {
     try {
       List<Seat> result = new ArrayList<>();
-      for(Speciality spc: specialities.fetchActual(extramural)) {
+      for (Speciality spc : specialities.fetchActual(extramural)) {
         Seat s = get(year, spc, extramural);
         result.add(s);
       }

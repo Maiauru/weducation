@@ -116,7 +116,7 @@ public class XMLDocument {
         for (int n = 0; n < nodes.getLength(); n++) {
           // Пробегаем по ним циклом и отбираем только те, имя которых соответствует требуемому
           if (nodes.item(n).getNodeName().contentEquals(tagName)) {
-            return(nodes.item(n));
+            return nodes.item(n);
           }
         }
       }

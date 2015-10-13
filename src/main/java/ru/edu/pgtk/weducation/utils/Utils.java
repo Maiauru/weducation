@@ -14,8 +14,8 @@ import javax.ejb.EJBException;
  */
 public class Utils {
 
-  private final static String SALT = "WeducationPWD@2015byGooamoko";
-  private final static SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+  private static final String SALT = "WeducationPWD@2015byGooamoko";
+  private static final SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
 
   private Utils() {
     throw new IllegalStateException("This constructor should not be called!");
@@ -51,7 +51,7 @@ public class Utils {
       String pwd = password + SALT;
       MessageDigest md = MessageDigest.getInstance("MD5");
       md.update(pwd.getBytes());
-      byte hash[] = md.digest();
+      byte[] hash = md.digest();
       StringBuilder sb = new StringBuilder();
       for (int i = 0; i < hash.length; i++) {
         sb.append(String.format("%02x", hash[i]));

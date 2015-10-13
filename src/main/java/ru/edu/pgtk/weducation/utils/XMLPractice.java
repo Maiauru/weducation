@@ -46,7 +46,7 @@ public class XMLPractice {
   
   @Override
   public String toString() {
-    return "Practice [index=" + index + ", name=" + name + ", load=" + load +"]";
+    return "Practice [index=" + index + ", name=" + name + ", load=" + load + "]";
   }
 
   public void addLoad(XMLPracticeLoad item) {

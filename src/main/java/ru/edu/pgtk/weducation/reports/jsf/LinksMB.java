@@ -17,7 +17,7 @@ import ru.edu.pgtk.weducation.entity.GroupSemester;
 @Named("linksMB")
 public class LinksMB {
   
-  private final static String prefix = "reports/group/";
+  private static final String prefix = "reports/group/";
 
   /**
    * Возвращает ссылку на сводную ведомость.

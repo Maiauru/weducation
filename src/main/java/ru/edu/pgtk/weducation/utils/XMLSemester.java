@@ -41,6 +41,6 @@ public class XMLSemester {
   
   @Override
   public String toString() {
-    return "Semester [number=" + number + ", weeks=" + weeks +"]";
+    return "Semester [number=" + number + ", weeks=" + weeks + "]";
   }
 }
