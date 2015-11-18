@@ -103,7 +103,7 @@ public class ImportPlanMB implements Serializable {
 		uploaded = false;
 		try {
 			PlanParser parser = new PlanParser(file.getInputStream());
-			if ((parser.isCorrect())) {
+			if (parser.isCorrect()) {
 				if (null == speciality) {
 					addMessage("Нет данных о специальности для импорта учебного плана!");
 				} else {
